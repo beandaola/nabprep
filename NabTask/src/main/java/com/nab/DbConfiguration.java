@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 @Configuration
-@Profile("prod")
+@Profile("encrypt")
 public class DbConfiguration {
 	
 	private static final Logger LOG = LoggerFactory.getLogger(DbConfiguration.class);

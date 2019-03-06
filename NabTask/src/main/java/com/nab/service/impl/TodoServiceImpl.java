@@ -37,7 +37,7 @@ public class TodoServiceImpl implements TodoService {
 			for(Todo todo : todos) {
 				todo.setPerson(person);
 			}
-			personRepository.saveAndFlush(person);
+			todoRepository.saveAll(todos);
 		}
 		
 		return findByPersonId(person.getId());
