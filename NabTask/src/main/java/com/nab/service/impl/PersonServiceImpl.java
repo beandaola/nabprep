@@ -16,7 +16,6 @@ import com.nab.service.PersonService;
 @Service("personService")
 public class PersonServiceImpl implements PersonService {
 
-	@Autowired
 	private PersonRepository personRepository;
 	
 	@Autowired
